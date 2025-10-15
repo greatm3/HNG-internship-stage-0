@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Dynamic profile generator",
   "main": "app.js",
+  "type": "module",
   "scripts": {},
   "repository": {
     "type": "git",
