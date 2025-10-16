@@ -20,7 +20,7 @@ meRouter.get('/', async (req, res) => {
     } catch (err) {
         logError(err, 'CAT API SERVICE');
         res.status(500).json({
-            detail: 'Cat API service unavailable',
+            error: 'Cat API service unavailable',
         });
     }
 });
