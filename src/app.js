@@ -4,8 +4,9 @@ import { meRouter } from './routes/me.js';
 import rateLimiter from './middlewares/rateLimiter.js';
 
 const app = express();
+const ipRequests = new Map();
 
-app.use(rateLimiter)
+app.use(rateLimiter(ipRequests))
 app.use(express.json());
 app.use(cors());
 
