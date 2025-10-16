@@ -9,7 +9,7 @@ app.use(cors());
 
 app.use('/me', meRouter);
 
-// 
+// direct users to the /me path
 app.use((req, res) => {
     res.status(404).json({ error: 'go to /me endpoint' });
 });
