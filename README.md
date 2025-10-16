@@ -87,4 +87,4 @@ This task taught me how to:
 - Integrate external APIs
 - Implement custom rate limiting
 - Handle API errors gracefully
-- Deploy on Railway without Vercel or Render
+- Deploy on Railway
