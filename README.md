@@ -30,6 +30,7 @@ The project is a simple RESTful API that returns my profile information along wi
 - Well-structured and beginner-friendly Express project
 
 ### Project Structure
+```bash
 .
 ├── src
 │   ├── routes
@@ -43,6 +44,7 @@ The project is a simple RESTful API that returns my profile information along wi
 ├── .env.example           # sample environment variables
 ├── package.json
 └── README.md
+```
 
 ### Tech Stack
 - Runtime: Node.js
@@ -81,8 +83,8 @@ http://localhost:9090/me
 
 ### What i learnt
 This task taught me how to:
--Build and structure a clean Express backend
--Integrate external APIs
--Implement custom rate limiting
--Handle API errors gracefully
--Deploy on Railway without Vercel or Render
+- Build and structure a clean Express backend
+- Integrate external APIs
+- Implement custom rate limiting
+- Handle API errors gracefully
+- Deploy on Railway without Vercel or Render
