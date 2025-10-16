@@ -1,9 +1,11 @@
 import express from 'express';
 import cors from 'cors';
 import { meRouter } from './routes/me.js';
+import rateLimiter from './middlewares/rateLimiter.js';
 
 const app = express();
 
+app.use(rateLimiter)
 app.use(express.json());
 app.use(cors());
 
