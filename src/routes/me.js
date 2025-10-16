@@ -10,9 +10,9 @@ meRouter.get('/', async (req, res) => {
         res.status(200).json({
             status: 'success',
             user: {
-                email: 'ezennagreat@gmail.com',
-                name: 'Great Ezenna',
-                stack: 'Node.js/Express',
+                email: process.env.USER_EMAIL || 'ezennagreat@gmail.com',
+                name: process.env.USER_NAME || 'Great Ezenna',
+                stack: process.env.USER_STACK || 'Node.js/Express',
             },
             timestamp: new Date().toISOString(),
             fact: catFact,
